@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="style.css" />
     <title>Search API's</title>
   </head>
-  <body>
+  <body class="fade-in">
     <div class="container">
       <h1>Search API's</h1>
 
       <div class="search-box" id="search-box">
-        <input type="text" id="search-input" placeholder="Search....." />
-      </div>
+        <input
+          type="text"
+          onfocus="this.value='';"
+          id="search-input"
+          placeholder="Search....."
+        />
+
+      <div id="search-results"></div>
+
+      <div id="content-items" class="content-items"></div>
     </div>
 
     <script src="app.js"></script>
